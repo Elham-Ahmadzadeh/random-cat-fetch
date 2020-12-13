@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #app {
+            background-image: linear-gradient(300deg, rgba(247, 247, 247, 1), rgba(252, 221, 221, 1)92%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: darksalmon;
+            border: 0;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+        }
+
+        .imageCat {
+            height: 80%;
+            width: 50%;
+
+        }
+    </style>
+
+    <div id="app">
+
+        <img class="imageCat" :src="catImage" alt="">
+        <input class="btn" @click="addCat()" type="button" value="get the cat">
+
+
+    </div>
+
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
